@@ -21,6 +21,7 @@ jobs:
       run: |
         cargo install tauri-cli
         cargo tauri build
+        ls -l  target/release/bundle/dmg
     - name: Upload build artifact
       uses: actions/upload-artifact@v3
       with:
@@ -40,6 +41,7 @@ jobs:
       run: |
         cargo install tauri-cli
         cargo tauri build --target aarch64-apple-darwin
+        ls -l  target/release/bundle/dmg
     - name: Upload build artifact
       uses: actions/upload-artifact@v3
       with:
