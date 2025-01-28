@@ -1,4 +1,4 @@
-## tauri-deepseek
+# tauri-deepseek
 
 一个独立的桌面应用程序，用于 deepseek，使用 Tauri 构建。
 

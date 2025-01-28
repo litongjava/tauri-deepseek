@@ -1,22 +1,20 @@
 {
-  "devPath": "https://chat.deepseek.com/",
-  "distDir": "dist",
+  "build": {
+    "devPath": "https://chat.deepseek.com/",
+    "distDir": "dist"
+  },
   "package": {
     "productName": "tauri-deepseek",
     "version": "0.1.0"
   },
   "tauri": {
+    "identifier": "com.litongjava.tauri.deepseek",
     "allowlist": {
       "all": false
     },
     "bundle": {
       "active": true,
       "category": "DeveloperTool",
-      "copyright": "",
-      "deb": {
-        "depends": []
-      },
-      "externalBin": [],
       "icon": [
         "icons/32x32.png",
         "icons/128x128.png",
@@ -24,29 +22,8 @@
         "icons/icon.icns",
         "icons/icon.ico"
       ],
-      "identifier": "com.litongjava.tauri.deepseek",
-      "longDescription": "",
-      "macOS": {
-        "entitlements": null,
-        "exceptionDomain": "",
-        "frameworks": [],
-        "providerShortName": null,
-        "signingIdentity": null
-      },
       "resources": [],
-      "shortDescription": "",
-      "targets": "all",
-      "windows": {
-        "certificateThumbprint": null,
-        "digestAlgorithm": "sha256",
-        "timestampUrl": ""
-      }
-    },
-    "security": {
-      "csp": null
-    },
-    "updater": {
-      "active": false
+      "targets": "all"
     },
     "windows": [
       {
